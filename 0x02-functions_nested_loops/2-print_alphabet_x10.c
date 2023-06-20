@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * print_x10alphabet - print x10 alphabets
+ * print_alphabet_x10 - print x10 alphabets
  */
-void print_x10alphabet(void)
+
+void print_alphabet_x10(void)
 {
 	char letter;
 	int i;
