@@ -1,50 +1,34 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * print_word - prints a word
- * @i: number of char in word
- * return: void
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
+ * Return: Always 0
  */
-#include<stdio.h>
-#include"main.h"
-/**
- * print_word - prints a word
- * @word: word to print
- * return: void
- */
-void print_word(const char* word)
+int main(void)
 {
-        int i = 0;
-        while (word[i] != '\0')
-        {
-                putchar(word[i]);
-                i++;
-                }
-}
+	int i;
 
-int main()
-{
-int i;
-
-for (i = 1; i <= 100; i++)
-_putchar(i);
-else{
-        for (i % 3 == 0)
-        const char *word = "Fizz"
-        print_word (word);
-        _putchar(' ');
-                        }
-else if{
-        for (i % 5 == 0)
-        const char *word = "Buzz"
-        print_word (word);
-        _putchar (' ');
-        }
-else if{
-        for ( i % 3 == 0 && i % 5 == 0)
-        const char *word = "FizzBuzz"
-        print_word (word);
-        _putchar(' ');
-        }
-        putchar(' ');
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0)
+		{printf("Fizz");
+	}
+		else if (i % 5 == 0)
+	{printf("Buzz");
+	}
+		else if (i % 3 == 0 && i % 5 == 0)
+	{printf("FizzBuzz");
+	}
+		else if (i == 1)
+	{printf("%d", i);
+	}
+		else
+	{
+		printf("%d", i)
+	}
+	}
+	printf("\n");
+	return (0);
 }
